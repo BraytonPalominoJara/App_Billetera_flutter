@@ -28,7 +28,7 @@ if (flutterVersionName == null) {
 
 android {
     namespace = "com.example.billetera_fluter"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 35
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
