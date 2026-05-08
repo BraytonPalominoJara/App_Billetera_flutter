@@ -249,7 +249,7 @@ class _HomeScreenState extends State<HomeScreen> {
         _showUpdateDialog(latestVersion, updateUrl, releaseNotes, isMandatory);
       } else {
         if (!silent) {
-          _showCustomSnackBar('Al día. Local: "$_currentAppVersion" | Remoto: "$latestVersion" | Iguales', isError: false);
+          _showCustomSnackBar('BD: ${data.keys.toList()} | Remoto: "${data['latest_version']}" | Local: "$_currentAppVersion"', isError: false);
         }
       }
     } catch (e) {
